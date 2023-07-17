@@ -6,6 +6,8 @@
 
 ### Express
 
+-   `express.urlencoded()` is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called as a middleware in your application using the code: app.use(express.urlencoded());
+
 ### ngrok
 
 # Twilio
