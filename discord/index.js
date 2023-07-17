@@ -20,8 +20,6 @@ client.on("messageCreate", async function (message) {
         if (message.author.bot) return;
 
         const gptResponse = await openai.createCompletion({
-            // prompt: `ChatGPT is a friendly chatbot. \n\ ChatGPT: Hello how are you? \n\ {$message.author.username}: ${message.content} \n\ ChatGPT:`,
-            // stop: ["ChatGPT", "stop"],
             model: "text-davinci-003",
             prompt: message.content,
             max_tokens: 100,
