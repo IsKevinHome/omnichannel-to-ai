@@ -2,11 +2,7 @@ require("dotenv").config();
 // Discord
 const { Client, GatewayIntentBits } = require("discord.js");
 const client = new Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent,
-    ],
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
 });
 //OpenAI
 const { Configuration, OpenAIApi } = require("openai");
@@ -25,6 +21,7 @@ client.on("messageCreate", async function (message) {
             max_tokens: 100,
             temperature: 0,
         });
+
         message.reply(`${gptResponse.data.choices[0].text}`);
         // console.log(message.content);
         // message.reply(`You said: ${message.content}`);
