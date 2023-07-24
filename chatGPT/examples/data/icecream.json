@@ -1,0 +1,12 @@
+{
+    "Harold": {
+        "iceCream": {
+            "likes": ["vanilla", "chocolate", "strawberry"],
+            "dislikes": ["cookie dought", "peanut butter", "cookies and cream"]
+        },
+        "anime": {
+            "enjoys": ["Naruto", "One Piece", "Dragon Ball Z"],
+            "dislikes": ["my hero academia", "soul eater", "attack on titan"]
+        }
+    }
+}
