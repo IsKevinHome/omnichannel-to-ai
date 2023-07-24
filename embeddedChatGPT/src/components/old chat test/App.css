@@ -1,0 +1,29 @@
+.chatContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #48acf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.chat {
+    background-color: white;
+    width: 12.5rem;
+    height: 25rem;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    transform-origin: bottom right;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
